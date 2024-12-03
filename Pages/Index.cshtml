@@ -4,7 +4,165 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNES STUDIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+    background: url(C:\Users\User\Downloads\ozadje_Studio.jpg) no-repeat center center/cover;
+    height: 400px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for text readability */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.hero p {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+        .container {
+            padding: 20px;
+        }
+        .package {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>FITNES STUDIO</h1>
+        </div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#packages">Packages</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#contact">Contact</a>
+            <a href="login.cshtml">Login/Register</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    <div>
+        <h1>Welcome to FITNES STUDIO</h1>
+        <p>Your fitness journey begins here.</p>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>
+            At FITNES STUDIO, we are committed to providing a premium fitness experience. 
+            From state-of-the-art equipment to wellness packages, we have something for everyone. 
+            Explore our offerings and join our community today!
+        </p>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="container">
+        <h2>Our Packages</h2>
+        <div class="package">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Basic Package">
+                <h3>Basic Package</h3>
+                <p>Access to our fitness facilities</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Plus Package">
+                <h3>Plus Package</h3>
+                <p>Includes sauna access</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Deluxe Package">
+                <h3>Deluxe Package</h3>
+                <p>Sauna, pool, and massage access</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="All-in Package">
+                <h3>All-In Package</h3>
+                <p>Personalized training with a coach</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="container">
+        <h2>Meet Our Trainers</h2>
+        <p>Our professional trainers are here to guide you every step of the way!</p>
+        <!-- Add trainer cards here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>Location: 123 Fitness Lane, Wellness City</p>
+        <p>Email: info@fitnesstudio.com</p>
+        <p>Phone: +123-456-7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FITNES STUDIO. All rights reserved.</p>
+    </footer>
+</body>
